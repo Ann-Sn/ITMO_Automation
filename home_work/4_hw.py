@@ -45,4 +45,54 @@ class Math:
     def subtraction(self):
         return self.a - self.b
 
+Задание № 3 
 
+class SidebarElements:
+
+    def __init__(self, text: str, type: str, loc: str) -> str:
+        self.text = text
+        self.type = type = 'Кнопка'
+        self.loc = loc
+
+    def print(self):
+        return print(self.type + ' - ' + self.text + ' имеет локатор ' + self.loc)
+
+    def click(self):
+        return print("Клик по кнопке - {}".format(self.text) + '\n')
+
+
+text_box = SidebarElements('Text Box', type, loc='SidebarElements#text_box')
+text_box.print()
+text_box.click()
+
+check_box = SidebarElements('Check Box', type, loc='SidebarElements#check_box')
+check_box.print()
+check_box.click()
+
+radio_button = SidebarElements('Radio Button', type, loc='SidebarElements#radio_button')
+radio_button.print()
+radio_button.click()
+
+web_tables = SidebarElements('Web Tables', type, loc='SidebarElements#web_tables')
+web_tables.print()
+web_tables.click()
+
+buttons = SidebarElements('Buttons', type, loc='SidebarElements#buttons')
+buttons.print()
+buttons.click()
+
+links = SidebarElements('Links', type, loc='SidebarElements#links')
+links.print()
+links.click()
+
+broken_links_images = SidebarElements('Broken Links - Images', type, loc='SidebarElements#broken_links_images')
+broken_links_images.print()
+broken_links_images.click()
+
+upload_and_download = SidebarElements('Upload adn Download', type, loc='SidebarElements#upload_and_download')
+upload_and_download.print()
+upload_and_download.click()
+
+dynamic_properties = SidebarElements('Dynamic Properties', type, loc='SidebarElements#dynamic_properties')
+dynamic_properties.print()
+dynamic_properties.click()
